@@ -9,7 +9,7 @@ func solution(numbers []int) float64 {
 		sum += v
 	}
 
-    return float64(sum) / float64(len(numbers))
+	return float64(sum) / float64(len(numbers))
 }
 
 func main() {

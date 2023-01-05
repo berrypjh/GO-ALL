@@ -6,7 +6,7 @@ import "fmt"
 func solution(n int) int {
 	x := 1
 	for {
-		if 6 * x % n == 0 {
+		if 6*x%n == 0 {
 			return x
 		}
 		x++

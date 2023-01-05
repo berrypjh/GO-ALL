@@ -10,7 +10,7 @@ func solution(my_string string) string {
 		result += string(my_string[i])
 	}
 
-    return result
+	return result
 }
 
 func main() {

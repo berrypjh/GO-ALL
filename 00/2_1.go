@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func solution(num1 float64, num2 float64) int {
-    return int(num1 / num2 * 1000)
+	return int(num1 / num2 * 1000)
 }
 
 func main() {

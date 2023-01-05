@@ -4,7 +4,7 @@ package main
 import "fmt"
 
 func solution(age int) int {
-    return 2022 - age + 1
+	return 2022 - age + 1
 }
 
 func main() {

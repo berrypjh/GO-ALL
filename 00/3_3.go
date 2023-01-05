@@ -8,15 +8,15 @@ func solution(n int) []int {
 
 	// for i := 1; i <= n; i+=2 {
 	// 	x = append(x, i)
-    // }
+	// }
 
 	for i := 1; i <= n; i++ {
-		if i % 2 == 1 {
+		if i%2 == 1 {
 			x = append(x, i)
 		}
 	}
 
-    return x
+	return x
 }
 
 func main() {

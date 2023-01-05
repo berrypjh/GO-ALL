@@ -7,10 +7,10 @@ func solution(num_list []int) []int {
 	result := []int{}
 
 	for i := range num_list {
-		result = append(result, num_list[len(num_list) - i - 1])
+		result = append(result, num_list[len(num_list)-i-1])
 	}
 
-    return result
+	return result
 }
 
 func main() {

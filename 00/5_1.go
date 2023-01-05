@@ -8,15 +8,15 @@ func solution(price int) int {
 
 	if price >= 500000 {
 		result = int(float64(price) * 0.8)
-	} else if  price >= 300000 {
+	} else if price >= 300000 {
 		result = price * 9 / 10
-	} else if  price >= 100000 {
+	} else if price >= 100000 {
 		result = price * 95 / 100
 	} else {
 		result = price
 	}
 
-    return result
+	return result
 }
 
 func main() {

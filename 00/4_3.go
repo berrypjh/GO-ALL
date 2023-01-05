@@ -6,11 +6,11 @@ import "fmt"
 func solution(slice int, n int) int {
 	result := n / slice
 
-	if n % slice != 0 {
+	if n%slice != 0 {
 		result++
 	}
 
-    return result
+	return result
 }
 
 func main() {

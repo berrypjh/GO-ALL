@@ -12,7 +12,7 @@ func solution(my_string string, n int) string {
 		}
 	}
 
-    return result
+	return result
 }
 
 func main() {

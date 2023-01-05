@@ -6,11 +6,11 @@ import "fmt"
 func solution(n int) int {
 	x := 1
 
-	if n % 7 == 0 {
+	if n%7 == 0 {
 		x = 0
 	}
 
-    return n / 7 + x
+	return n/7 + x
 }
 
 func main() {

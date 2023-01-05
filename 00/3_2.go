@@ -29,7 +29,7 @@ func solution(array []int) int {
 	if z > 1 {
 		return -1
 	}
-	
+
 	return result
 }
 

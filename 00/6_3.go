@@ -11,10 +11,10 @@ func solution(num_list []int) []int {
 			odd++
 		case 1:
 			even++
-		}	
+		}
 	}
 
-    return []int{odd, even}
+	return []int{odd, even}
 }
 
 func main() {
