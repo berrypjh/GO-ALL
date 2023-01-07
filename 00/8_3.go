@@ -8,8 +8,8 @@ import (
 func solution(emergency []int) []int {
 	result := make([]int, len(emergency))
 
-	for i := 0; i < len(emergency); i++ {
-		for j := 0; j < len(emergency); j++ {
+	for i := range emergency {
+		for j := range emergency {
 			if emergency[i] < emergency[j] {
 				result[i]++
 			}

@@ -5,26 +5,22 @@ import (
 	"fmt"
 )
 
-func solution(emergency []int) []int {
-	result := []int{}
+func solution(n int) int {
+	result := 0
 
-	for i := 0; i < len(emergency); i++ {
-		if len(emergency)%i == 0 {
-			result = append(result, i)
+	for i := 1; i <= n; i++ {
+		if n%i == 0 {
+			result++
 		}
 	}
 
-	num := len(result)
-	return num
+	return result
 }
 
 func main() {
-	result1 := solution([]int{3, 76, 24})
+	result1 := solution(20)
 	fmt.Println(result1)
 
-	result2 := solution([]int{1, 2, 3, 4, 5, 6, 7})
+	result2 := solution(100)
 	fmt.Println(result2)
-
-	result3 := solution([]int{30, 10, 23, 6, 100})
-	fmt.Println(result3)
 }

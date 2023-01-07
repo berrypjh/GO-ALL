@@ -3,22 +3,15 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func solution(age int) string {
 	result := ""
 
-	if age/1000 != 0 {
-		result += string('a' + age/1000)
-		result += string('a' + (age%1000-age%100)/100)
-		result += string('a' + (age%100-age%10)/10)
-	} else if (age%1000-age%100)/100 != 0 {
-		result += string('a' + age/100)
-		result += string('a' + (age%100-age%10)/10)
-	} else if (age%100-age%10)/10 != 0 {
-		result += string('a' + age/10)
+	for _, v := range strconv.Itoa(age) {
+		result += string(v + 49)
 	}
-	result += string('a' + age%10)
 
 	return result
 }
