@@ -32,11 +32,11 @@ func solution(my_string string) int {
 }
 
 func main() {
-	// result1 := solution("aAb1B2cC34oOp")
-	// fmt.Println(result1)
+	result1 := solution("aAb1B2cC34oOp")
+	fmt.Println(result1)
 
-	// result2 := solution("1a2b3c4d123Z")
-	// fmt.Println(result2)
+	result2 := solution("1a2b3c4d123Z")
+	fmt.Println(result2)
 
 	result3 := solution("231321313")
 	fmt.Println(result3)
