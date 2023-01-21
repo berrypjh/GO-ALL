@@ -10,12 +10,12 @@ func solution(id_pw []string, db [][]string) string {
 }
 
 func main() {
-	result1 := solution([]string{"meosseugi", "1234"}, [][]string{[]string{"rardss", "123"}, []string{"yyoom", "1234"}, []string{"meosseugi", "1234"}})
+	result1 := solution([]string{"meosseugi", "1234"}, [][]string{{"rardss", "123"}, {"yyoom", "1234"}, {"meosseugi", "1234"}})
 	fmt.Println(result1)
 
-	result2 := solution([]string{"programmer01", "15789"}, [][]string{[]string{"programmer02", "111111"}, []string{"programmer00", "134"}, []string{"programmer01", "1145"}})
+	result2 := solution([]string{"programmer01", "15789"}, [][]string{{"programmer02", "111111"}, {"programmer00", "134"}, {"programmer01", "1145"}})
 	fmt.Println(result2)
 
-	result3 := solution([]string{"rabbit04", "98761"}, [][]string{[]string{"jaja11", "98761"}, []string{"krong0313", "29440"}, []string{"rabbit00", "111333"}})
+	result3 := solution([]string{"rabbit04", "98761"}, [][]string{{"jaja11", "98761"}, {"krong0313", "29440"}, {"rabbit00", "111333"}})
 	fmt.Println(result3)
 }

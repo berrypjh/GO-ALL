@@ -27,9 +27,9 @@ func solution(dots [][]int) int {
 }
 
 func main() {
-	result1 := solution([][]int{[]int{1, 2}, []int{2, 1}, []int{2, 2}, []int{1, 2}})
+	result1 := solution([][]int{{1, 2}, {2, 1}, {2, 2}, {1, 2}})
 	fmt.Println(result1)
 
-	result2 := solution([][]int{[]int{-1, -1}, []int{1, 1}, []int{1, -1}, []int{-1, 1}})
+	result2 := solution([][]int{{-1, -1}, {1, 1}, {1, -1}, {-1, 1}})
 	fmt.Println(result2)
 }
