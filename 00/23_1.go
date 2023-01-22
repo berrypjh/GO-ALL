@@ -3,10 +3,23 @@ package main
 
 import (
 	"fmt"
+	"math"
+	"sort"
 )
 
 func solution(numlist []int, n int) []int {
-    return []int{}
+	sort.Slice(numlist, func(i, j int) bool {
+		x := math.Abs(float64(numlist[i] - n))
+		y := math.Abs(float64(numlist[j] - n))
+
+		if x == y {
+			return numlist[i] > numlist[j]
+		}
+
+		return x < y
+	})
+
+	return numlist
 }
 
 func main() {
