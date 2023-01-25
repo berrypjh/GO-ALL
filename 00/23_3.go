@@ -3,10 +3,22 @@ package main
 
 import (
 	"fmt"
+	"regexp"
 )
 
 func solution(babbling []string) int {
-	return 0
+	result := 0
+	re := regexp.MustCompile(`aya|ye|woo|ma`)
+
+	for _, v := range babbling {
+		temp := re.ReplaceAllString(v, "")
+
+		if temp == "" {
+			result++
+		}
+	}
+
+	return result
 }
 
 func main() {
