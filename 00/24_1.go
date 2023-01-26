@@ -6,7 +6,17 @@ import (
 )
 
 func solution(chicken int) int {
-    return 0
+	result := 0
+	coupon := chicken
+
+	for coupon >= 10 {
+		x := coupon / 10
+		result += x
+
+		coupon = coupon%10 + x
+	}
+
+	return result
 }
 
 func main() {
@@ -15,4 +25,7 @@ func main() {
 
 	result2 := solution(1081)
 	fmt.Println(result2)
+
+	result3 := solution(109)
+	fmt.Println(result3)
 }
