@@ -6,7 +6,16 @@ import (
 )
 
 func solution(id_pw []string, db [][]string) string {
-	return ""
+	for _, v := range db {
+		if id_pw[0] == v[0] {
+			if id_pw[1] == v[1] {
+				return "login"
+			}
+			return "wrong pw"
+		}
+	}
+
+	return "fail"
 }
 
 func main() {
