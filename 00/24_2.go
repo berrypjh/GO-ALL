@@ -3,10 +3,14 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func solution(bin1 string, bin2 string) string {
-    return ""
+	n1, _ := strconv.ParseInt(bin1, 2, 64)
+	n2, _ := strconv.ParseInt(bin2, 2, 64)
+
+	return strconv.FormatInt(n1+n2, 2)
 }
 
 func main() {
