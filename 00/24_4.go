@@ -3,10 +3,25 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 func solution(i int, j int, k int) int {
-    return 0
+	result := 0
+	str := strconv.Itoa(k)
+
+	for x := i; x <= j; x++ {
+		arr := strings.Split(strconv.Itoa(x), "")
+
+		for _, v := range arr {
+			if strings.Contains(v, str) {
+				result++
+			}
+		}
+	}
+
+	return result
 }
 
 func main() {
