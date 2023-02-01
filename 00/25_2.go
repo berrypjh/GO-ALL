@@ -6,7 +6,7 @@ import (
 )
 
 func solution(M int, N int) int {
-    return 0
+	return M*N - 1
 }
 
 func main() {

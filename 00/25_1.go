@@ -6,7 +6,23 @@ import (
 )
 
 func solution(A string, B string) int {
-    return 0
+	result := 0
+
+	for i := range A {
+		str := ""
+		str += string(A[len(A)-i:])
+		str += string(A[:len(A)-i])
+
+		if str == B {
+			break
+		}
+		result++
+	}
+
+	if len(A) == result {
+		return -1
+	}
+	return result
 }
 
 func main() {
