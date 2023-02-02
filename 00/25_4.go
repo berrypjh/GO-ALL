@@ -1,4 +1,4 @@
-// 연속된 수의 합
+// 다음에 올 숫자
 package main
 
 import (

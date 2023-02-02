@@ -6,7 +6,20 @@ import (
 )
 
 func solution(num int, total int) []int {
-    return []int{}
+	result := []int{}
+	n := 0
+
+	for i := -100; i <= 100; i++ {
+		n1 := i + (i + (num - 1))
+		n2 := n1 * num /2
+		if n2 == total {
+			n = i
+			break
+		}
+	}
+	fmt.Println(n)
+
+    return result
 }
 
 func main() {
