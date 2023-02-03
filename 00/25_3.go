@@ -7,19 +7,13 @@ import (
 
 func solution(num int, total int) []int {
 	result := []int{}
-	n := 0
+	n := (2*total/num - num + 1) / 2
 
-	for i := -100; i <= 100; i++ {
-		n1 := i + (i + (num - 1))
-		n2 := n1 * num /2
-		if n2 == total {
-			n = i
-			break
-		}
+	for i := 0; i < num; i++ {
+		result = append(result, n+i)
 	}
-	fmt.Println(n)
 
-    return result
+	return result
 }
 
 func main() {
