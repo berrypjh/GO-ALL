@@ -12,9 +12,9 @@ import (
 const port = 8080
 
 type application struct {
-	DSN string
+	DSN    string
 	Domain string
-	DB repository.DatabaseReop
+	DB     repository.DatabaseReop
 }
 
 func main() {
@@ -30,13 +30,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	app.DB = &dbrepo.PostgresDBRepo{ DB: conn }
+	app.DB = &dbrepo.PostgresDBRepo{DB: conn}
 	defer app.DB.Connection().Close()
 
 	app.Domain = "example.com"
 
 	log.Println("Starting application on port", port)
-	
+
 	// start a web server
 	err = http.ListenAndServe(fmt.Sprintf(":%d", port), app.routes())
 	if err != nil {
